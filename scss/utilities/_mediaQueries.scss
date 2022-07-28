@@ -1,0 +1,194 @@
+
+/* media queries para TODOS LOS HTML*/
+/* Celulares*/
+@media screen and (max-width:576px){
+
+    footer{
+
+        grid-template-rows:  1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-areas: "email red1 red2" 
+        "email red3 red4";
+        
+    }
+
+    .logoFooter{  
+        display: none;
+    }
+    
+    .logoEmail{
+        text-align: center;
+        grid-area: email;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .logoRedes1{
+        grid-area: red1;
+        justify-content:end;
+        align-self: end;
+        padding: 0.25rem;
+    }
+    
+    .logoRedes2{
+        grid-area: red2;
+        justify-content: start;
+        padding: 0.25rem;
+        align-self: end;
+    }
+    
+    .logoRedes3{
+        grid-area: red3;
+        justify-content: end;
+        align-self: start;
+        padding: 0.25rem;
+    }
+    
+    .logoRedes4{
+        grid-area: red4;
+        justify-content: start;
+        align-self: start;
+        padding: 0.25rem;
+    } 
+
+}
+
+/* tabletas */
+
+@media (max-width: 991px) and (min-width:576px){
+    
+    footer{
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: "logo email red1 red2"
+                             "logo email red3 red4";
+        
+    }
+}
+
+/* desde tableta hasta escritorio iconos del footer mas pequenios */
+
+@media(min-width:768px){
+    
+    .logoFooter{  
+        width: 70%;
+        justify-self: center;
+    }
+    
+    .logoEmail{
+        width: 50%;
+        justify-self: center;
+    }
+    
+    .logoRedes1{
+        width: 50%;
+        justify-self: center;
+    }
+    
+    .logoRedes2{
+        width: 50%;
+        justify-self: center;
+    }
+    
+    .logoRedes3{
+        width: 50%;
+        justify-self: center;
+    }
+    
+    .logoRedes4{
+        width: 50%;
+        justify-self: center;
+    } 
+}
+/* fin de los media queries para TODOS LOS HTML*/
+/* media queries index*/
+/* Celulares */
+
+@media screen and (max-width:576px){
+    
+    .main-inicio{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen " 
+                             "parrafo1"
+                             "parrafo2"
+                             "boton";
+    }
+
+    .imagen-inicio{
+        grid-area: imagen; 
+        display: flex;
+        justify-content: center;
+
+    }
+    
+    .parrafo1-inicio{
+        padding: 1rem;
+        padding-right: 1rem;
+        grid-area: parrafo1;
+        text-align: center;
+    }
+    
+    .parrafo2-inicio{
+        padding-right: 1rem;
+        padding: 1rem;
+        grid-area: parrafo2;
+        text-align: center;
+    }
+
+    .button{
+        grid-area:boton;
+    }
+}
+
+/* tabletas */
+
+@media (max-width:991px) and (min-width:576px){
+    .main-inicio{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen " 
+                             "parrafo1"
+                             "parrafo2"
+                             "boton";
+    }
+
+    .imagen-inicio{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* escritorios */
+
+@media (min-width:992px){
+    .main-inicio{
+        grid-template-columns: 1fr 0.85fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen parrafo1"
+                             "imagen parrafo2"
+                             "imagen boton";
+    }
+
+    .imagen-inicio{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .parrafo1-inicio{
+        margin-right: 1rem;
+    }
+
+    .parrafo2-inicio{
+        margin-right: 1rem;
+    }
+
+    .button{
+        width: 40%;
+        height: 40%;
+    }    
+}
+/* fin media queries index */

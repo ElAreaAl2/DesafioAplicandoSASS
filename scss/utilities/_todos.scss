@@ -1,0 +1,183 @@
+/* estilos de para los 5 html */
+/*Reset*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.boton{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoEmail{
+    h3{
+        text-align: center;
+    }
+}
+
+.logoInicio{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-principal{
+    /* hace que ocupe el 100% del espacio del html */
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.65fr 1fr 0.25fr;
+    /* el grid para columns lo omito porque me colapsa el main */
+    /* por facilidad las columns las pienso aplicar a parte en el main y el footer*/
+}
+
+footer{
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-columns:  2fr 1.5fr repeat(4, 1fr);
+    grid-template-areas: "logo email red1 red2 red3 red4";
+    align-items: center;
+}
+
+.logoFooter{  
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+.logoEmail{
+    grid-area: email;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoRedes1{
+    grid-area: red1;
+    display: flex;
+    justify-content: center;
+}
+
+.logoRedes2{
+    grid-area: red2;
+    display: flex;
+    justify-content: center;
+}
+
+.logoRedes3{
+    grid-area: red3;
+    display: flex;
+    justify-content: center;
+}
+
+.logoRedes4{
+    grid-area: red4;
+    display: flex;
+    justify-content: center;
+}
+
+.logoEmail{
+    h3{
+        font-size: medium;
+    }
+}
+
+/* En el header use flex como layout */
+header{
+    background-color: $color-principal;
+}
+
+header{
+    h1{
+        display: none;
+    }
+}
+
+.contenedorLogo{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid $color-secundario;
+}
+
+header img{
+    width: 21%;
+}
+
+.menu__lista{
+    a{
+        /* retira el subrayado de los links (a) */
+        text-decoration: none;
+        color: black;
+    }
+}
+
+header{
+    nav{
+        ul{
+            li{
+                font-family: 'Merriweather', serif;
+                font-weight: bold;
+                list-style: none;
+                margin: 1rem;
+                padding: 1rem;
+                transition-duration: .5s;
+            }
+        }
+    }
+}
+
+.menu__lista:hover{
+    border-radius: 0.8rem; 
+    background-color: $color-secundario;
+}
+
+body{
+    background-color: $color-secundario;
+}
+
+main{
+    font-family: 'Merriweather', serif;
+}
+
+footer{
+    background-color: $color-principal;
+    font-family: 'Merriweather', serif;
+}
+
+.logoFooter{
+    img{
+        width: 100%;
+    }
+}
+
+.logoEmail{
+    img{
+        width: 30%;
+    }
+}
+
+.logoRedes1{
+    img{
+        width: 40%;
+    }
+}
+
+.logoRedes2{
+    img{
+        width: 40%;
+    }
+}
+
+.logoRedes3{
+    img{
+        width: 40%;
+    }
+}
+
+.logoRedes4{
+    img{
+        width: 40%;
+    }
+}
+/* fin de los estilos de para los 5 html */

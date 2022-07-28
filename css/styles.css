@@ -1,849 +1,330 @@
-/*Reset*/
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 /* estilos de para los 5 html */
+/*Reset*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
 
-.boton{
-    margin-left: auto;
-    margin-right: auto;
-}
+.boton {
+  margin-left: auto;
+  margin-right: auto; }
 
-.logoEmail h3{
-    text-align: center;
-}
+.logoEmail h3 {
+  text-align: center; }
 
-.logoInicio{
-    display: flex;
-    justify-content: center;
-}
-/* inicio grid para los 5 html */
-.contenedor-principal{
+.logoInicio {
+  display: flex;
+  justify-content: center; }
 
-    /* hace que ocupe el 100% del espacio del html */
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 0.65fr 1fr 0.25fr;
-    /* el grid para columns lo omito porque me colapsa el main */
-    /* por facilidad las columns las pienso aplicar a parte en el main y el footer*/
-}
+.contenedor-principal {
+  /* hace que ocupe el 100% del espacio del html */
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.65fr 1fr 0.25fr;
+  /* el grid para columns lo omito porque me colapsa el main */
+  /* por facilidad las columns las pienso aplicar a parte en el main y el footer*/ }
 
-/* grid para el footer */
+footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1.5fr repeat(4, 1fr);
+  grid-template-areas: "logo email red1 red2 red3 red4";
+  align-items: center; }
 
-footer{
-    display: grid;
-    grid-template-rows:  1fr;
-    grid-template-columns:  2fr 1.5fr repeat(4, 1fr);
-    grid-template-areas: "logo email red1 red2 red3 red4";
-    align-items: center;
-}
+.logoFooter {
+  grid-area: logo;
+  display: flex;
+  justify-content: center; }
 
-.logoFooter{  
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-}
+.logoEmail {
+  grid-area: email;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.logoEmail{
-    grid-area: email;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.logoRedes1 {
+  grid-area: red1;
+  display: flex;
+  justify-content: center; }
 
-.logoRedes1{
-    grid-area: red1;
-    display: flex;
-    justify-content: center;
-}
+.logoRedes2 {
+  grid-area: red2;
+  display: flex;
+  justify-content: center; }
 
-.logoRedes2{
-    grid-area: red2;
-    display: flex;
-    justify-content: center;
-}
+.logoRedes3 {
+  grid-area: red3;
+  display: flex;
+  justify-content: center; }
 
-.logoRedes3{
-    grid-area: red3;
-    display: flex;
-    justify-content: center;
-}
+.logoRedes4 {
+  grid-area: red4;
+  display: flex;
+  justify-content: center; }
 
-.logoRedes4{
-    grid-area: red4;
-    display: flex;
-    justify-content: center;
-}
-
-.logoEmail h3{
-    font-size: medium;
-}
-
-/* fin grid footer */
+.logoEmail h3 {
+  font-size: medium; }
 
 /* En el header use flex como layout */
+header {
+  background-color: #C0BACB; }
 
-header{
-    background-color: #C0BACB;
-}
+header h1 {
+  display: none; }
 
-header h1{
-    display: none;
-}
+.contenedorLogo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid beige; }
 
-.contenedorLogo{
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid beige;
-}
+header img {
+  width: 21%; }
 
-header img{
-    width: 21%;
-}
+.menu__lista a {
+  /* retira el subrayado de los links (a) */
+  text-decoration: none;
+  color: black; }
 
-.menu__lista a{
-    /* retira el subrayado de los links (a) */
-    text-decoration: none;
-    color: black;
-}
+header nav ul li {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+  transition-duration: .5s; }
 
+.menu__lista:hover {
+  border-radius: 0.8rem;
+  background-color: beige; }
 
-header nav ul li{
-    
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-    list-style: none;
-    margin: 1rem;
-    padding: 1rem;
-    transition-duration: .5s;
-}
+body {
+  background-color: beige; }
 
-.menu__lista:hover{
-    border-radius: 0.8rem; 
-    background-color: beige;
-}
+main {
+  font-family: 'Merriweather', serif; }
 
-body{
-    background-color: beige;
-}
+footer {
+  background-color: #C0BACB;
+  font-family: 'Merriweather', serif; }
 
-main{
-    font-family: 'Merriweather', serif;
-}
+.logoFooter img {
+  width: 100%; }
 
-footer{
-    background-color: #C0BACB;
-    font-family: 'Merriweather', serif;
-}
+.logoEmail img {
+  width: 30%; }
 
-.logoFooter img{
-    width: 100%;
-}
+.logoRedes1 img {
+  width: 40%; }
 
-.logoEmail img{
-    width: 30%;
-}
+.logoRedes2 img {
+  width: 40%; }
 
-.logoRedes1 img{
-    width: 40%;
-}
+.logoRedes3 img {
+  width: 40%; }
 
-.logoRedes2 img{
-    width: 40%;
-}
-
-.logoRedes3 img{
-    width: 40%;
-}
-
-.logoRedes4 img{
-    width: 40%;
-}
-
-
-/* media queries para celulares (TODOS LOS HTML) */
-
-@media screen and (max-width:576px){
-
-    footer{
-
-        grid-template-rows:  1fr 1fr;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-areas: "email red1 red2"
-                             "email red3 red4";
-        
-    }
-
-    .logoFooter{  
-        display: none;
-    }
-    
-    .logoEmail{
-        text-align: center;
-        grid-area: email;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 1rem;
-    }
-    
-    .logoRedes1{
-        grid-area: red1;
-        justify-content:end;
-        align-self: end;
-        padding: 0.25rem;
-    }
-    
-    .logoRedes2{
-        grid-area: red2;
-        justify-content: start;
-        padding: 0.25rem;
-        align-self: end;
-    }
-    
-    .logoRedes3{
-        grid-area: red3;
-        justify-content: end;
-        align-self: start;
-        padding: 0.25rem;
-    }
-    
-    .logoRedes4{
-        grid-area: red4;
-        justify-content: start;
-        align-self: start;
-        padding: 0.25rem;
-    } 
-
-}
-
-/* tabletas */
-
-@media (max-width: 991px) and (min-width:576px){
-    
-    footer{
-
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
-        grid-template-areas: "logo email red1 red2"
-                             "logo email red3 red4";
-        
-    }
-}
-
-/* desde tableta hasta escritorio iconos del footer mas pequenios */
-
-@media(min-width:768px){
-    
-    .logoFooter{  
-        width: 70%;
-        justify-self: center;
-    }
-    
-    .logoEmail{
-        width: 50%;
-        justify-self: center;
-    }
-    
-    .logoRedes1{
-        width: 50%;
-        justify-self: center;
-    }
-    
-    .logoRedes2{
-        width: 50%;
-        justify-self: center;
-    }
-    
-    .logoRedes3{
-        width: 50%;
-        justify-self: center;
-    }
-    
-    .logoRedes4{
-        width: 50%;
-        justify-self: center;
-    } 
-}
-
-/* fin grid para los 5 html */
+.logoRedes4 img {
+  width: 40%; }
 
 /* fin de los estilos de para los 5 html */
-
-
 /* index */
+main img {
+  width: 75%;
+  padding: 1rem; }
 
-main img{
-    width: 75%;
-    padding: 1rem;
-}
+.sub1 {
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 1rem;
+  margin-bottom: 1rem; }
 
-.sub1{
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
+.parrafo1 {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  text-align: justify; }
 
-.parrafo1{
-    margin-left: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
+.sub2 {
+  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Mono', monospace;
+  margin-left: 1rem;
+  margin-bottom: 1rem; }
 
-.sub2{
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-.parrafo2{
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-}
+.parrafo2 {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify; }
 
 .button {
-	padding: 1rem 1.5rem;
-    margin: 1.5rem;
-    background: whitesmoke;
-    color: black;
-    border-radius: 5px;
-    outline: 0;
-    border: 0;
-    text-decoration: none;
-    box-shadow: 4px 4px 0 #C0BACB;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 30%;
-}
+  padding: 1rem 1.5rem;
+  margin: 1.5rem;
+  background: whitesmoke;
+  color: black;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  box-shadow: 4px 4px 0 #C0BACB;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 30%; }
 
 .button:active {
-	transform: translate(4px, 4px);
- 	box-shadow: none;
-}
+  transform: translate(4px, 4px);
+  box-shadow: none; }
 
-/* Incio grid en index */
+.main-inicio {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.25;
+  grid-template-areas: "imagen parrafo1" 
+ "imagen parrafo2"
+ "imagen boton";
+  column-gap: 1rem; }
 
-.main-inicio{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.25;
-    grid-template-areas: "imagen parrafo1" 
-                         "imagen parrafo2"
-                         "imagen boton";
-    column-gap: 1rem;
-}
+.imagen-inicio {
+  grid-area: imagen;
+  justify-items: center;
+  align-items: center; }
 
-.imagen-inicio{
-    grid-area: imagen;  
-    justify-items: center;
-    align-items: center;
-}
+.parrafo1-inicio {
+  padding: 1.5rem;
+  grid-area: parrafo1;
+  border-bottom: 2px groove; }
 
-.parrafo1-inicio{
-    padding: 1.5rem;
-    grid-area: parrafo1;
-    border-bottom: 2px groove;
-}
+.parrafo2-inicio {
+  padding: 1.5rem;
+  grid-area: parrafo2; }
 
-.parrafo2-inicio{
-    padding: 1.5rem;
-    grid-area: parrafo2;
-}
-
-.button{
-    grid-area: boton;
-    justify-self: center;
-}
-/* media queries index*/
-
-/* para celulares vertical (pantanias moviles)*/
-
-@media screen and (max-width:576px){
-    
-    .main-inicio{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "imagen " 
-                             "parrafo1"
-                             "parrafo2"
-                             "boton";
-    }
-
-    .imagen-inicio{
-        grid-area: imagen; 
-        display: flex;
-        justify-content: center;
-
-    }
-    
-    .parrafo1-inicio{
-        padding: 1rem;
-        padding-right: 1rem;
-        grid-area: parrafo1;
-        text-align: center;
-    }
-    
-    .parrafo2-inicio{
-        padding-right: 1rem;
-        padding: 1rem;
-        grid-area: parrafo2;
-        text-align: center;
-    }
-
-    .button{
-        grid-area:boton;
-    }
-}
-
-/* tabletas */
-
-@media (max-width:991px) and (min-width:576px){
-    .main-inicio{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "imagen " 
-                             "parrafo1"
-                             "parrafo2"
-                             "boton";
-    }
-
-    .imagen-inicio{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* escritorios */
-
-@media (min-width:992px){
-    .main-inicio{
-        grid-template-columns: 1fr 0.85fr;
-        grid-template-rows: auto;
-        grid-template-areas: "imagen parrafo1"
-                             "imagen parrafo2"
-                             "imagen boton";
-    }
-
-    .imagen-inicio{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .parrafo1-inicio{
-        margin-right: 1rem;
-    }
-
-    .parrafo2-inicio{
-        margin-right: 1rem;
-    }
-
-    .button{
-        width: 40%;
-        height: 40%;
-    }    
-}
-
-/* fin grid en index */
+.button {
+  grid-area: boton;
+  justify-self: center; }
 
 /* fin index */
-
-/* doctoraTatiana */
-
-.titulo2{
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Mono', monospace;
-    margin: 25px;
+/* media queries para TODOS LOS HTML*/
+/* Celulares*/
+@media screen and (max-width: 576px) {
+  footer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-areas: "email red1 red2" 
+ "email red3 red4"; }
+  .logoFooter {
+    display: none; }
+  .logoEmail {
     text-align: center;
-}
-
-.bloque1{
-    background-color: #B7C4B6;
-    padding: 15px;
-}
-
-.bloque1__titulo1{
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Mono', monospace;
-    margin-left: 35px;
-}
-
-.bloque1__titulo1--sub{
-    margin-left: 25px;
-    margin-top: 8px;
-}
-
-.doctora-2{
-    width: 75%;
-}
-
-.parrafo-1{
-    margin: 25px;
-    padding-left: 35px;
-}
-
-/* Inicio grid doctoraTatiana */
-
-.main-doctora{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: 0.15fr 1fr 0.15fr 0.65fr ;
-    grid-template-areas: "titulo titulo titulo"
-                         "bloque bloque bloque"
-                         "subti subti subti"
-                         "carrusel carrusel carrusel";
-}
-
-.titulo2{
-    grid-area: titulo;
-}
-.bloque1{
-    grid-area: bloque;
-}
-.parrafoDoc2{
-    grid-area: subti;
-    align-self: center;
-}
-.carousel{
-    grid-area: carrusel;
-    width: 60%;
-    justify-self: center;
-}
-
-/* grid bloque1 */
-.bloque1{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imgBloc parrBloc";
-}
-
-.contenedorImgDoc2{
-    grid-area: imgBloc;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedorParrafoBloque1{
-    grid-area: parrBloc;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* media queries Doctora Tatiana */
-
-
-/* celulares*/
-@media screen and (max-width:576px){
-    .main-doctora{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "titulo"
-                             "bloque"
-                             "subti"
-                             "carrusel";
-    }
-
-    .bloque1{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "imgBloc"
-                             "parrBloc";
-    }
-
-    .carousel{
-        width: 90%;     
-    }
-
-}
+    grid-area: email;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; }
+  .logoRedes1 {
+    grid-area: red1;
+    justify-content: end;
+    align-self: end;
+    padding: 0.25rem; }
+  .logoRedes2 {
+    grid-area: red2;
+    justify-content: start;
+    padding: 0.25rem;
+    align-self: end; }
+  .logoRedes3 {
+    grid-area: red3;
+    justify-content: end;
+    align-self: start;
+    padding: 0.25rem; }
+  .logoRedes4 {
+    grid-area: red4;
+    justify-content: start;
+    align-self: start;
+    padding: 0.25rem; } }
 
 /* tabletas */
-@media (max-width:991px) and (min-width:576px){
-    .main-doctora{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "titulo"
-                             "bloque"
-                             "subti"
-                             "carrusel";
-    }
+@media (max-width: 991px) and (min-width: 576px) {
+  footer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "logo email red1 red2"
+ "logo email red3 red4"; } }
 
-    .bloque1{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "imgBloc"
-                             "parrBloc";
-    }
-
-    .carousel{
-        width: 90%;     
-    }
-}
-
-/* escritorio, no usare media queries para esta page */
-
-/* Fin grid doctoraTatiana */
-
-/* fin doctoraTatiana */
-
-/* galeria */
-
-.tituloMulti{
-    font-family: 'Merriweather', serif;
-    font-family: 'Roboto Mono', monospace;
-    margin: 35px;
-}   
-
-.imgGaleria{
+/* desde tableta hasta escritorio iconos del footer mas pequenios */
+@media (min-width: 768px) {
+  .logoFooter {
     width: 70%;
-}
+    justify-self: center; }
+  .logoEmail {
+    width: 50%;
+    justify-self: center; }
+  .logoRedes1 {
+    width: 50%;
+    justify-self: center; }
+  .logoRedes2 {
+    width: 50%;
+    justify-self: center; }
+  .logoRedes3 {
+    width: 50%;
+    justify-self: center; }
+  .logoRedes4 {
+    width: 50%;
+    justify-self: center; } }
 
-/* inicio grid en galeria */
+/* fin de los media queries para TODOS LOS HTML*/
+/* media queries index*/
+/* Celulares */
+@media screen and (max-width: 576px) {
+  .main-inicio {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen " 
+ "parrafo1"
+ "parrafo2"
+ "boton"; }
+  .imagen-inicio {
+    grid-area: imagen;
+    display: flex;
+    justify-content: center; }
+  .parrafo1-inicio {
+    padding: 1rem;
+    padding-right: 1rem;
+    grid-area: parrafo1;
+    text-align: center; }
+  .parrafo2-inicio {
+    padding-right: 1rem;
+    padding: 1rem;
+    grid-area: parrafo2;
+    text-align: center; }
+  .button {
+    grid-area: boton; } }
 
-.main-galeria{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: 0.25fr repeat(2, 1fr);
-   grid-template-areas: "titGaleria titGaleria titGaleria"
-                        "galeria1 galeria2 galeria3"
-                        "galeria4 galeria5 galeria6"; 
-    align-items: center;
-    justify-items: center;
-}
+/* tabletas */
+@media (max-width: 991px) and (min-width: 576px) {
+  .main-inicio {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen " 
+ "parrafo1"
+ "parrafo2"
+ "boton"; }
+  .imagen-inicio {
+    display: flex;
+    justify-content: center; } }
 
-.tituloMulti{
-    grid-area: titGaleria;
-}
-
-.galeria1{
-    grid-area: galeria1;
+/* escritorios */
+@media (min-width: 992px) {
+  .main-inicio {
+    grid-template-columns: 1fr 0.85fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen parrafo1"
+ "imagen parrafo2"
+ "imagen boton"; }
+  .imagen-inicio {
     display: flex;
     justify-content: center;
-}
+    align-self: center; }
+  .parrafo1-inicio {
+    margin-right: 1rem; }
+  .parrafo2-inicio {
+    margin-right: 1rem; }
+  .button {
+    width: 40%;
+    height: 40%; } }
 
-.galeria2{
-    grid-area: galeria2;
-    display: flex;
-    justify-content: center;
-}
-
-.galeria3{
-    grid-area: galeria3;
-    display: flex;
-    justify-content: center;
-}
-
-.galeria4{
-    grid-area: galeria4;
-    display: flex;
-    justify-content: center;
-}
-
-.galeria5{
-    grid-area: galeria5;
-    display: flex;
-    justify-content: center;
-}
-
-.galeria6{
-    grid-area: galeria6;
-    display: flex;
-    justify-content: center;
-}
-
-/* media queries galeria */
-
-/* celulares verticales */
-@media screen and (max-width:414px){
-    .main-galeria{
-        grid-template-columns: auto;
-        grid-template-rows: 0.25fr repeat(6, 1fr);
-        grid-template-areas: "titGaleria"
-                             "galeria1"
-                             "galeria2"
-                             "galeria3"
-                             "galeria4"
-                             "galeria5"
-                             "galeria6"; 
-     }
-}
-
-/* tabletas pequenias */
-@media screen and (max-width:600px){
-    .main-galeria{
-        grid-template-columns: auto;
-        grid-template-rows: 0.25fr repeat(6, 1fr);
-        grid-template-areas: "titGaleria"
-                             "galeria1"
-                             "galeria2"
-                             "galeria3"
-                             "galeria4"
-                             "galeria5"
-                             "galeria6"; 
-     }
-}
-
-/* fin grid en galeria */
-
-/* fin galeria */
-
-/* procedimientos */
-
-.titulos{
-    text-align: center;
-}
-
-.imgDisenio img{
-    width: 55%;
-}
-
-.imgProcedimientos{
-    width: 65%;
-}
-
-/* inicio grid en procedimientos */
-
-.main-procedimientos{
-    display: grid;
-    grid-template-columns:auto auto;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "parrBlanq imgBlanq"
-                         "imgDisenio parrDisenio"
-                         "parrArmonia imgArmonia";
-    align-items: center;
-}
-
-.contenedorBlanquiamento{
-    background-color: #B7C4B6;
-    padding: 15%;
-    grid-area: parrBlanq;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.imgBlaqueamiento{
-    grid-area: imgBlanq;
-    display: flex;
-    justify-content: center;
-}
-
-.imgDisenio{
-    grid-area: imgDisenio;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedorDisenio{
-    background-color: #B7C4B6;
-    padding: 15%;
-    grid-area: parrDisenio;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contenedorArmonia{
-    padding: 12%;
-    grid-area: parrArmonia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #B7C4B6;
-}
-
-.imgArmonia{
-    grid-area: imgArmonia;
-    display: flex;
-    justify-content: center;
-}
-
-/* media queries */
-
-/* celulares pequenios */
-@media screen and (max-width:414px){
-    .main-procedimientos{
-        grid-template-columns:auto;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "parrBlanq"
-                             "imgBlanq"
-                             "parrDisenio"
-                             "imgDisenio"
-                             "parrArmonia"
-                             "imgArmonia";
-    }
-}
-
-/* tabletas pequenias */
-@media screen and (max-width:600px){
-    .main-procedimientos{
-        grid-template-columns:auto;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: "parrBlanq"
-                             "imgBlanq"
-                             "parrDisenio"
-                             "imgDisenio"
-                             "parrArmonia"
-                             "imgArmonia";
-    }
-}
-
-/* fin grid en procedimientos */
-
-/* fin procedimientos */
-
-/* contacto */
-
-form{
-    margin: 35px;
-}
-
-form fieldset{
-    padding: 15px;
-}
-
-form fieldset legend{
-
-    font-weight: bold;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-form fieldset div{  
-    padding: 2.5px;
-    margin: 2.5px;
-    display: flex;
-    justify-content: center;
-}
-
-form fieldset textarea{  
-    padding: 5px;
-}
-
-.titulo-contacto {
-    color: #856eb0;
-    font-size: 27px;
-    padding: 10px;
-}
-
-.btn{
-    background-color: #856eb0;
-    border: #856eb0;
-    color: beige;
-}
-
-/* fin contacto */
+/* fin media queries index */
