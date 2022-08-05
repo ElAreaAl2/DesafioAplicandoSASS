@@ -382,6 +382,9 @@ main img {
 
 /* fin procedimientos */
 /* contacto */
+.tituloContacto {
+  display: none; }
+
 form {
   margin: 35px; }
 
