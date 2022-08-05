@@ -1,0 +1,41 @@
+/* contacto */
+
+form{
+    margin: 35px;
+}
+
+form fieldset{
+    padding: 15px;
+}
+
+form fieldset legend{
+
+    font-weight: bold;
+    padding: 15px;
+    @include flex-center;
+    
+}
+
+form fieldset div{  
+    padding: 2.5px;
+    margin: 2.5px;
+    @include flex-center;
+}
+
+form fieldset textarea{  
+    padding: 5px;
+}
+
+.titulo-contacto {
+    color: $color-secundario;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.btn{
+    background-color: $color-secundario;
+    border: $color-secundario;
+    color: antiquewhite;
+}
+
+/* fin contacto */

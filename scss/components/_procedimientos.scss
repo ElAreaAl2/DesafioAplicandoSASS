@@ -1,0 +1,57 @@
+/* inicio procedimientos */
+.titulos{
+    text-align: center;
+    color: $color-primario;
+}
+
+.imgDisenio{
+    img{
+        width: 55%;   
+    }
+}
+
+.imgProcedimientos{
+    width: 65%;
+}
+
+.main-procedimientos{
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "parrBlanq imgBlanq"
+                         "imgDisenio parrDisenio"
+                         "parrArmonia imgArmonia";
+    align-items: center;
+}
+
+.contenedorBlanquiamento{
+    @extend %contenedores;
+    grid-area: parrBlanq;
+}
+
+.imgBlaqueamiento{
+    grid-area: imgBlanq;
+    @include flex-center;
+}
+
+.imgDisenio{
+    grid-area: imgDisenio;
+    @include flex-center;
+}
+
+.contenedorDisenio{
+    @extend %contenedores;
+    grid-area: parrDisenio;
+    
+}
+
+.contenedorArmonia{
+    @extend %contenedores;
+    grid-area: parrArmonia;
+}
+
+.imgArmonia{
+    grid-area: imgArmonia;
+    @include flex-center;
+}
+/* fin procedimientos */

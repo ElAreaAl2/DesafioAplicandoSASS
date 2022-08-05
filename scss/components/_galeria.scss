@@ -1,0 +1,55 @@
+/* inicio galeria */
+.tituloMulti{
+    @include tituloGaleria;
+}   
+
+.imgGaleria{
+    width: 70%;
+}
+
+.main-galeria{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 0.25fr repeat(2, 1fr);
+   grid-template-areas: "titGaleria titGaleria titGaleria"
+                        "galeria1 galeria2 galeria3"
+                        "galeria4 galeria5 galeria6"; 
+    align-items: center;
+    justify-items: center;
+}
+
+.tituloMulti{
+    grid-area: titGaleria;
+}
+
+.galeria1{
+    grid-area: galeria1;
+    @include flex-center;
+}
+
+.galeria2{
+    grid-area: galeria2;
+    @include flex-center;
+}
+
+.galeria3{
+    grid-area: galeria3;
+    @include flex-center;
+}
+
+.galeria4{
+    grid-area: galeria4;
+    @include flex-center;
+}
+
+.galeria5{
+    grid-area: galeria5;
+    @include flex-center;
+}
+
+.galeria6{
+    grid-area: galeria6;
+    @include flex-center;
+}
+
+/* fin galeria */

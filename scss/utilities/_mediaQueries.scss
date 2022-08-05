@@ -78,27 +78,27 @@
     }
     
     .logoEmail{
-        width: 50%;
+        width: 60%;
         justify-self: center;
     }
     
     .logoRedes1{
-        width: 50%;
+        width: 60%;
         justify-self: center;
     }
     
     .logoRedes2{
-        width: 50%;
+        width: 60%;
         justify-self: center;
     }
     
     .logoRedes3{
-        width: 50%;
+        width: 60%;
         justify-self: center;
     }
     
     .logoRedes4{
-        width: 50%;
+        width: 60%;
         justify-self: center;
     } 
 }
@@ -192,3 +192,117 @@
     }    
 }
 /* fin media queries index */
+
+/* media queries Doctora Tatiana */
+
+/* Celulares */
+@media screen and (max-width:576px){
+    .main-doctora{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "titulo"
+                             "bloque"
+                             "subti"
+                             "carrusel";
+    }
+
+    .bloque1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "imgBloc"
+                             "parrBloc";
+    }
+
+    .carousel{
+        width: 90%;
+    }
+    
+}
+
+/*tabletas*/
+@media (max-width:991px) and (min-width:576px){
+    .main-doctora{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "titulo"
+                             "bloque"
+                             "subti"
+                             "carrusel";
+    }
+
+    .bloque1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "imgBloc"
+                             "parrBloc";
+    }
+
+    .carousel{
+        width: 90%;
+    }
+}
+/* fin media queries Doctora Tatiana */
+
+/* media queries galeria */
+
+/* celulares*/
+@media screen and (max-width:576px){
+    .main-galeria{
+        grid-template-columns: auto;
+        grid-template-rows: 0.25fr repeat(6, 1fr);
+        grid-template-areas: "titGaleria"
+                             "galeria1"
+                             "galeria2"
+                             "galeria3"
+                             "galeria4"
+                             "galeria5"
+                             "galeria6"; 
+     }
+}
+
+/* tabletas*/
+@media (max-width:991px) and (min-width:576px){
+    .main-galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr repeat(3, 1fr);
+        grid-template-areas: "titGaleria titGaleria"
+                             "galeria1 galeria2"
+                             "galeria3 galeria4"
+                             "galeria5 galeria6"; 
+     }
+}
+
+/* fin media queries galeria */
+/* media queries procedimientos */
+/* celulares pequenios */
+@media (max-width:576px){
+    .main-procedimientos{
+        grid-template-columns:auto;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "parrBlanq"
+                             "imgBlanq"
+                             "parrDisenio"
+                             "imgDisenio"
+                             "parrArmonia"
+                             "imgArmonia";
+    }
+}
+
+/* tabletas pequenias */
+@media (max-width:991px) and (min-width:576px){
+    .main-procedimientos{
+        grid-template-columns:auto;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "parrBlanq"
+                             "imgBlanq"
+                             "parrDisenio"
+                             "imgDisenio"
+                             "parrArmonia"
+                             "imgArmonia";
+    }
+}
+/* fin media queries procedimientos */

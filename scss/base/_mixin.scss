@@ -1,0 +1,12 @@
+//mixin para todas las page
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+//mixin para galeria
+@mixin tituloGaleria {
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 35px;
+}

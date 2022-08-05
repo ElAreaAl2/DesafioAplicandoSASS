@@ -1,10 +1,17 @@
-//variables
-$color-principal: #C0BACB;
-$color-secundario: beige;
 
 //import de los demas estilos
-@import "utilities/todos";
-@import "utilities/index";
+@import "base/variables";
+@import "base/map";
+@import "base/mixin";
+@import "base/extend";
+@import "utilities/headerFoooter";
+@import "components/index";
+@import "components/TatianaDuran";
+@import "components/galeria";
+@import "components/procedimientos";
+@import "components/contacto";
 @import "utilities/mediaQueries";
+
+
 
 

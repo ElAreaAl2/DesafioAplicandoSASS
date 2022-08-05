@@ -1,0 +1,84 @@
+
+/* Tatiana C Duran */
+.titulo2{
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
+    margin: 25px;
+    text-align: center;
+}
+
+.bloque1{
+    background-color: $color-secundario;
+    padding: 15px;
+}
+
+.bloque1__titulo1{
+    color: $color-primario;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 35px;
+}
+
+.bloque1__titulo1--sub{
+    color: antiquewhite;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+.doctora-2{
+    width: 75%;
+}
+
+.parrafo-1{
+    margin: 25px;
+    padding-left: 35px;
+}
+
+.main-doctora{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 0.15fr 1fr 0.15fr 0.65fr ;
+    grid-template-areas: "titulo titulo titulo"
+                         "bloque bloque bloque"
+                         "subti subti subti"
+                         "carrusel carrusel carrusel";
+}
+
+.titulo2{
+    grid-area: titulo;
+}
+.bloque1{
+    grid-area: bloque;
+}
+.parrafoDoc2{
+    grid-area: subti;
+    align-self: center;
+}
+.carousel{
+    grid-area: carrusel;
+    width: 60%;
+    justify-self: center;
+}
+
+/* grid bloque1 */
+.bloque1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imgBloc parrBloc";
+}
+
+.contenedorImgDoc2{
+    grid-area: imgBloc;
+    @include flex-center;
+}
+
+.contenedorParrafoBloque1{
+    grid-area: parrBloc;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* fin Tatiana C Duran */

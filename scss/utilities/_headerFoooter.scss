@@ -7,6 +7,8 @@
 }
 
 .boton{
+    color: $color-primario;
+    background-color: $color-primario;
     margin-left: auto;
     margin-right: auto;
 }
@@ -85,7 +87,8 @@ footer{
 
 /* En el header use flex como layout */
 header{
-    background-color: $color-principal;
+    background-image: url(fondoHeaderFooter.jpg);
+    /* background-color: black; */
 }
 
 header{
@@ -97,7 +100,7 @@ header{
 .contenedorLogo{
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid $color-secundario;
+    border-bottom: 2px solid $color-primario;
 }
 
 header img{
@@ -108,7 +111,7 @@ header img{
     a{
         /* retira el subrayado de los links (a) */
         text-decoration: none;
-        color: black;
+        color: $color-primario;
     }
 }
 
@@ -129,11 +132,11 @@ header{
 
 .menu__lista:hover{
     border-radius: 0.8rem; 
-    background-color: $color-secundario;
+    background-color: beige;
 }
 
 body{
-    background-color: $color-secundario;
+    background-color: $color-primario;
 }
 
 main{
@@ -141,7 +144,7 @@ main{
 }
 
 footer{
-    background-color: $color-principal;
+    background-image: url(fondoHeaderFooter.jpg);    
     font-family: 'Merriweather', serif;
 }
 
@@ -152,32 +155,33 @@ footer{
 }
 
 .logoEmail{
+    color: $color-primario;
     img{
-        width: 30%;
+        width: 50%;
     }
 }
 
 .logoRedes1{
     img{
-        width: 40%;
+        width: 60%;
     }
 }
 
 .logoRedes2{
     img{
-        width: 40%;
+        width: 60%;
     }
 }
 
 .logoRedes3{
     img{
-        width: 40%;
+        width: 60%;
     }
 }
 
 .logoRedes4{
     img{
-        width: 40%;
+        width: 60%;
     }
 }
 /* fin de los estilos de para los 5 html */
