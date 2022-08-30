@@ -15,7 +15,7 @@
         display: none;
     }
     
-    .logoEmail{
+    .logoEmail {
         text-align: center;
         grid-area: email;
         padding-top: 1rem;
@@ -23,28 +23,28 @@
         padding-left: 1rem;
     }
     
-    .logoRedes1{
+    .logoRedes1 {
         grid-area: red1;
         justify-content:end;
         align-self: end;
         padding: 0.25rem;
     }
     
-    .logoRedes2{
+    .logoRedes2 {
         grid-area: red2;
         justify-content: start;
         padding: 0.25rem;
         align-self: end;
     }
     
-    .logoRedes3{
+    .logoRedes3 {
         grid-area: red3;
         justify-content: end;
         align-self: start;
         padding: 0.25rem;
     }
     
-    .logoRedes4{
+    .logoRedes4 {
         grid-area: red4;
         justify-content: start;
         align-self: start;
@@ -71,32 +71,32 @@
 
 @media(min-width:768px){
     
-    .logoFooter{  
+    .logoFooter {  
         width: 70%;
         justify-self: center;
     }
     
-    .logoEmail{
+    .logoEmail {
         width: 60%;
         justify-self: center;
     }
     
-    .logoRedes1{
+    .logoRedes1 {
         width: 60%;
         justify-self: center;
     }
     
-    .logoRedes2{
+    .logoRedes2 {
         width: 60%;
         justify-self: center;
     }
     
-    .logoRedes3{
+    .logoRedes3 {
         width: 60%;
         justify-self: center;
     }
     
-    .logoRedes4{
+    .logoRedes4 {
         width: 60%;
         justify-self: center;
     } 

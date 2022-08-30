@@ -43,36 +43,42 @@ footer {
   align-items: center; }
 
 .logoFooter {
-  grid-area: logo;
-  display: flex;
-  justify-content: center; }
+  grid-area: logo; }
+  .logoFooter a {
+    display: flex;
+    justify-content: center; }
 
-.logoEmail a {
-  grid-area: email;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.logoEmail {
+  grid-area: email; }
+  .logoEmail a {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.logoRedes1 a {
-  grid-area: red1;
-  display: flex;
-  justify-content: center; }
+.logoRedes1 {
+  grid-area: red1; }
+  .logoRedes1 a {
+    display: flex;
+    justify-content: center; }
 
-.logoRedes2 a {
-  grid-area: red2;
-  display: flex;
-  justify-content: center; }
+.logoRedes2 {
+  grid-area: red2; }
+  .logoRedes2 a {
+    display: flex;
+    justify-content: center; }
 
-.logoRedes3 a {
-  grid-area: red3;
-  display: flex;
-  justify-content: center; }
+.logoRedes3 {
+  grid-area: red3; }
+  .logoRedes3 a {
+    display: flex;
+    justify-content: center; }
 
-.logoRedes4 a {
-  grid-area: red4;
-  display: flex;
-  justify-content: center; }
+.logoRedes4 {
+  grid-area: red4; }
+  .logoRedes4 a {
+    display: flex;
+    justify-content: center; }
 
 .logoEmail h3 {
   font-size: medium; }
