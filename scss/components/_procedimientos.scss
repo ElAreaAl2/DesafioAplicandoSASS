@@ -2,6 +2,8 @@
 .titulos{
     text-align: center;
     color: $color-primario;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .imgDisenio{
@@ -16,7 +18,7 @@
 
 .main-procedimientos{
     display: grid;
-    grid-template-columns:auto auto;
+    grid-template-columns:1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "parrBlanq imgBlanq"
                          "imgDisenio parrDisenio"
@@ -31,18 +33,20 @@
 
 .imgBlaqueamiento{
     grid-area: imgBlanq;
-    @include flex-center;
+    display: flex;
+    justify-content: end;
+    width: 80%;
 }
 
 .imgDisenio{
     grid-area: imgDisenio;
     @include flex-center;
+    
 }
 
 .contenedorDisenio{
     @extend %contenedores;
     grid-area: parrDisenio;
-    
 }
 
 .contenedorArmonia{
@@ -52,6 +56,8 @@
 
 .imgArmonia{
     grid-area: imgArmonia;
-    @include flex-center;
+    display: flex;
+    justify-content: end;
+    width: 80%;
 }
 /* fin procedimientos */

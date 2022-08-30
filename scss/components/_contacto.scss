@@ -6,6 +6,7 @@
 
 form{
     margin: 35px;
+    grid-area: formulario;
 }
 
 form fieldset{
@@ -42,4 +43,15 @@ form fieldset textarea{
     color: antiquewhite;
 }
 
+ .mapaGoogle{
+    grid-area: mapa;
+    background-color: rgb(20, 20, 20);
+    margin: 1.5rem;
+    .tituloMap{
+        background-color: $color-secundario;
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+}
+ 
 /* fin contacto */

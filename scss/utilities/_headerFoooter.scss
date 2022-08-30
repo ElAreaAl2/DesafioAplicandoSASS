@@ -47,33 +47,33 @@ footer{
     justify-content: center;
 }
 
-.logoEmail{
-    grid-area: email;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logoEmail a{
+        grid-area: email;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
-.logoRedes1{
+.logoRedes1 a{
     grid-area: red1;
     display: flex;
     justify-content: center;
 }
 
-.logoRedes2{
+.logoRedes2 a{
     grid-area: red2;
     display: flex;
     justify-content: center;
 }
 
-.logoRedes3{
+.logoRedes3 a{
     grid-area: red3;
     display: flex;
     justify-content: center;
 }
 
-.logoRedes4{
+.logoRedes4 a{
     grid-area: red4;
     display: flex;
     justify-content: center;

@@ -6,6 +6,7 @@
     font-family: 'Roboto Mono', monospace;
     margin: 25px;
     text-align: center;
+    align-self: center;
 }
 
 .bloque1{
@@ -52,13 +53,19 @@
     grid-area: bloque;
 }
 .parrafoDoc2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
     grid-area: subti;
     align-self: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 .carousel{
     grid-area: carrusel;
     width: 60%;
     justify-self: center;
+    padding: 1rem;
 }
 
 /* grid bloque1 */
